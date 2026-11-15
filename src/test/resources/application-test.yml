@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.100.63:5432/hostinfo_test
+    username: taskuser
+    password: taskpass
+  jpa:
+    show-sql: false
+  flyway:
+    clean-disabled: false
+    clean-on-validation-error: true
+
+app:
+  version: "0.0.1-TEST"
+  git-sha: "abc1234"
+
+logging:
+  level:
+    root: WARN
+    com.example: DEBUG

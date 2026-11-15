@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.100.63:5432/hostinfo_dev
+    username: taskuser
+    password: taskpass
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    clean-disabled: false
+
+logging:
+  level:
+    com.example: DEBUG
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
